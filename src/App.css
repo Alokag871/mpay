@@ -469,3 +469,146 @@
     font-size: 9px;
   }
 }
+
+.payment-panel {
+  margin-top: 24px;
+  scroll-margin-top: 24px;
+}
+
+.payment-panel .panel-heading {
+  align-items: flex-start;
+}
+
+.payment-panel .panel-heading .muted {
+  margin: 7px 0 0;
+}
+
+.practice-tag {
+  flex-shrink: 0;
+  padding: 7px 10px;
+  border-radius: 20px;
+  color: #5b4cce;
+  background: #f0efff;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.payment-form {
+  display: grid;
+  gap: 10px;
+  max-width: 560px;
+}
+
+.payment-form label {
+  margin-top: 7px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.payment-form input {
+  width: 100%;
+  min-height: 46px;
+  padding: 12px 14px;
+  border: 1px solid #e0e2ec;
+  border-radius: 10px;
+  background: #fff;
+  color: #202438;
+  font: inherit;
+}
+
+.payment-form input:focus {
+  outline: 2px solid #b9b2ff;
+  border-color: #6558e8;
+}
+
+.form-hint {
+  margin: 4px 0;
+  color: #777c90;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.pay-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-height: 46px;
+  margin-top: 8px;
+  padding: 12px 16px;
+  border: 0;
+  border-radius: 10px;
+  background: #6558e8;
+  color: #fff;
+  font-weight: 700;
+}
+
+.pay-button:hover {
+  background: #5143c8;
+}
+
+.pay-button:focus-visible,
+.shortcut:focus-visible,
+.nav-item:focus-visible {
+  outline: 3px solid #b9b2ff;
+  outline-offset: 3px;
+}
+
+.app-message {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 22px;
+  padding: 13px 15px;
+  border: 1px solid #e5e2ff;
+  border-radius: 12px;
+  background: #f5f3ff;
+  color: #5143c8;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.app-message.success {
+  border-color: #bdebd5;
+  background: #edfbf4;
+  color: #18764f;
+}
+
+.app-message.error {
+  border-color: #ffd3cd;
+  background: #fff3f1;
+  color: #a13d30;
+}
+
+.message-close {
+  margin-left: auto;
+  padding: 0 4px;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font-size: 22px;
+  line-height: 1;
+}
+
+.payment-panel .demo-disclaimer {
+  max-width: 650px;
+  line-height: 1.7;
+}
+
+@media (max-width: 520px) {
+  .payment-panel .panel-heading {
+    flex-direction: column;
+  }
+
+  .practice-tag {
+    align-self: flex-start;
+  }
+
+  .payment-form label {
+    font-size: 12px;
+  }
+
+  .payment-form input {
+    font-size: 16px;
+  }
+}
